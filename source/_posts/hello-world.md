@@ -1,39 +1,8 @@
 ---
-title: Hello World
+title: 转型公告
 ---
 
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+由于服务器到期，高昂的续租费用使网站被迫转型，造成该结果首当其冲的是up的经营不善，对此表示惭愧。{% emoji blobcat blobcatcry %}
+自此，网站将不再商业化，内容将全部开源处理。{% emoji blobcat blobcatflower %}
 
-## Quick Start
-
-### Create a new post
-
-```bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-```bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-```bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-```bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+除插件资源外，所有积累资源都会在月底分类打包至网盘免费分享给大家，站点也会在月底前搭建完，期间若寻求资源可加群到群文件寻找，313121060。{% emoji blobcat ablobcatheart %}

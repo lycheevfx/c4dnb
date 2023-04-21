@@ -1,0 +1,87 @@
+# 文章
+article:
+  auto_cover: false
+  license: 
+
+# 导航栏
+sidebar:
+  menu:
+    wiki: '[文章](/wiki/)'
+    # notes: '[笔记](/notes/)'
+    # more: '[更多](/more/)'
+
+# 脚标
+footer:
+  social:
+    github:
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>'
+      url: https://github.com/lycheevfx
+    comments:
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" d="M924.3 338.4c-22.5-53.7-54.9-101.9-96.1-143.3-41.2-41.3-89.3-73.8-143-96.3C630.3 75.7 572.1 64 512 64h-2c-60.5 0.3-119 12.3-174.1 35.9-53.2 22.8-100.9 55.2-141.7 96.5-40.8 41.3-72.8 89.3-95 142.8C76.3 394.6 64.7 453.5 65 514.1c0.3 69.4 16.9 138.3 47.9 199.9v152c0 25.4 20.6 46 45.9 46h151.8c61.5 31.1 130.2 47.7 199.5 48h2.1c59.8 0 117.7-11.6 172.3-34.3 53.4-22.3 101.4-54.3 142.5-95.2 41.2-40.9 73.6-88.7 96.3-142 23.5-55.2 35.5-113.9 35.8-174.5 0.2-60.9-11.6-120-34.8-175.6zM312.4 560c-26.4 0-47.9-21.5-47.9-48s21.5-48 47.9-48 47.9 21.5 47.9 48-21.4 48-47.9 48z m199.6 0c-26.4 0-47.9-21.5-47.9-48s21.5-48 47.9-48 47.9 21.5 47.9 48-21.5 48-47.9 48z m199.6 0c-26.4 0-47.9-21.5-47.9-48s21.5-48 47.9-48 47.9 21.5 47.9 48-21.5 48-47.9 48z"/></svg>'
+      url: https://qm.qq.com/cgi-bin/qm/qr?k=tCDoB28u1cUEmwQBzuuAUGI9g4qWVTIO&jump_from=webapi&authKey=+8tSBcsMHSVS/KK3JyAfDfv4NeLXAH1Wt5glfGwtOrbf1T4cFsfD2Fv4opmSLJBx
+  content: | # 支持 Markdown 格式
+    <!--不蒜子计数器-->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!--在线人数统计-->
+    <script src="https://time-counter.onmicrosoft.cn/counter.js" async="" id="online-counter" interval="240" api="https://time-counter.onmicrosoft.cn/counter" room="624522220"></script>
+    
+    <center>
+      <div>
+        当前在线 <span style="color: rgb(13, 109, 252);font-weight: bold;" id="online_user"></span> 人  |  总访客 <span id="busuanzi_value_site_uv" style="color: rgb(13, 109, 252);font-weight: bold;"></span> 人
+      </div>
+      <div id="runtime_span"></div>
+        <script type="text/javascript">
+          function show_runtime() {
+              window.setTimeout("show_runtime()", 1000);
+              X = new Date("04/21/2023 00:00:00");
+              Y = new Date();
+              T = (Y.getTime() - X.getTime());
+              M = 24 * 60 * 60 * 1000;
+              a = T / M;
+              A = Math.floor(a);
+              b = (a - A) * 24;
+              B = Math.floor(b);
+              c = (b - B) * 60;
+              C = Math.floor((b - B) * 60);
+              D = Math.floor((c - C) * 60);
+              runtime_span.innerHTML = "⏱️本站已运行 " + A + "天" + B + "小时" + C + "分" + D + "秒"
+          }
+          show_runtime();
+        </script>
+      </div>
+
+    </center>
+
+# 评论
+comments:
+  service: waline
+  waline:
+    js: https://unpkg.com/@waline/client@v2/dist/waline.js
+    css: https://unpkg.com/@waline/client@v2/dist/waline.css
+    # Waline server address url, you should set this to your own link
+    serverURL: https://comments.c4dnb.com # waline 地址
+    # If false, comment count will only be displayed in post page, not in home page
+    commentCount: true
+    # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+    pageview: false
+
+    # Custom locales
+    locale:
+      placeholder: # 输入框内提示文字
+
+    # Custom emoji
+    emoji: 
+    #   - https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
+    #   - https://unpkg.com/@waline/emojis@1.1.0/weibo
+    #   - https://unpkg.com/@waline/emojis@1.1.0/alus
+      - https://unpkg.com/@waline/emojis@1.1.0/bmoji
+      - https://unpkg.com/@waline/emojis@1.1.0/bilibili
+    #   - https://unpkg.com/@waline/emojis@1.1.0/qq
+    #   - https://unpkg.com/@waline/emojis@1.1.0/tieba
+    #   - https://unpkg.com/@waline/emojis@1.1.0/tw-emoji
+
+# 标签插件
+tag_plugins:
+  emoji:
+    default: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/${name}.svg
+  

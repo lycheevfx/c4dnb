@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: c4dnb
+title: 荔枝博客
+avatar: "https://s1.ax1x.com/2023/04/19/p9ihNOH.jpg"
 subtitle:
 description:
 keywords: "c4dnb,荔枝资源站,荔枝博客"
 author: Lychee
-language:
+language: zh-CN
 timezone:
 
 # URL
